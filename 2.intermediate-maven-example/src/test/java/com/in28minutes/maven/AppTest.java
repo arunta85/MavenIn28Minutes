@@ -11,4 +11,12 @@ public class AppTest
     {
         assertEquals(0,new App().calculateSomething());
     }
+
+    @Test
+    public void testAdd() {
+        App app = new App();
+        assertEquals(5, app.add(2, 3));
+        assertEquals(0, app.add(-2, 2));
+        assertEquals(-7, app.add(-5, -2));
+    }
 }

@@ -45,16 +45,17 @@
 		</plugins>
 	</build>
 
-	<distributionManagement>
-		<repository>
-			<id>releases</id>
-			<name>Corporate Releases</name>
-			<url>Repository Name for releasing</url>
-		</repository>
-		<snapshotRepository>
-			<id>snapshot</id>
-			<name>Corporate Snapshots</name>
-			<url>Repository Name for releasing</url>
-		</snapshotRepository>
-	</distributionManagement>
+<distributionManagement>
+  <repository>
+    <id>jfrog-releases</id>
+    <name>JFrog Releases</name>
+    <url>https://trial24929v.jfrog.io/artifactory/maven-release-local</url>
+  </repository>
+  <snapshotRepository>
+    <id>jfrog-snapshots</id>
+    <name>JFrog Snapshots</name>
+    <url>https://trial24929v.jfrog.io/artifactory/maven-snapshot-local</url>
+  </snapshotRepository>
+</distributionManagement>
+
 </project>
