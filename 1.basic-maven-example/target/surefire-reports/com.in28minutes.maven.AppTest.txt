@@ -1,4 +1,22 @@
 -------------------------------------------------------------------------------
 Test set: com.in28minutes.maven.AppTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s -- in com.in28minutes.maven.AppTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.006 s <<< FAILURE! -- in com.in28minutes.maven.AppTest
+com.in28minutes.maven.AppTest.com.in28minutes.maven.AppTest.testApp() -- Time elapsed: 0.002 s <<< FAILURE!
+java.lang.Error: 
+Unresolved compilation problems: 
+	Test cannot be resolved to a type
+	The method assertTrue(boolean) is undefined for the type AppTest
+
+	at com.in28minutes.maven.AppTest.testApp(AppTest.java:8)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.apache.maven.surefire.junit.PojoTestSetExecutor.executeTestMethod(PojoTestSetExecutor.java:104)
+	at org.apache.maven.surefire.junit.PojoTestSetExecutor.execute(PojoTestSetExecutor.java:63)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:93)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+

@@ -4,7 +4,7 @@ package com.in28minutes.maven;
  * Hello world!
  *
  */
-public class App 
+public class AppNew 
 {
     public static void main( String[] args )
     {
