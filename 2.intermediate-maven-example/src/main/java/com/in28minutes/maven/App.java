@@ -8,12 +8,10 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World2!" );
+        System.out.println( "Hello World3!" );
     }
 
-	public int calculateSomething() {
-		return 0;
-	}
+
 
     // New simple functionality: add two integers
     public int add(int a, int b) {

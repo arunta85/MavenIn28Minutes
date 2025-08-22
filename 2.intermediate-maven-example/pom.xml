@@ -27,7 +27,32 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+
+		 <!-- removed self-referential dependency: com.in28minutes.maven:intermediate-maven-example:1.0-SNAPSHOT -->
 	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>jfrog-snapshots</id>
+			<url>https://trial24929v.jfrog.io/artifactory/maven-snapshot-local</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+		</repository>
+		<repository>
+			<id>jfrog-releases</id>
+			<url>https://trial24929v.jfrog.io/artifactory/maven-release-local</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</repository>
+	</repositories>
 
 	<build>
 		<plugins>
